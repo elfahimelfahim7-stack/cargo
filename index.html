@@ -30,68 +30,21 @@
             <div class="logo">
                 <span class="logo-accent">همزة</span> شوب
             </div>
-            <a href="#order-form-section" class="btn btn-sm btn-header">
-                <i class="fa-solid fa-shopping-cart"></i> اطلب الآن
-            </a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section: Product Showcase (Image Gallery) First -->
         <section class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-text-content">
-                    <div class="badge-discount">
-                        <i class="fa-solid fa-fire-flame-curved"></i> همزة العمر - خصم 50%
-                    </div>
-                    <h1 class="hero-title">
-                        باك 3 سراويل <span class="text-highlight">كارغو نصاصين</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        أناقة، راحة ومتانة صيفية لا مثيل لها! احصل على 3 ألوان مختلفة (الأسود الفخم، البلومارين الأنيق، والرمادي الرياضي) في عرض واحد مذهل.
-                    </p>
-                    
-                    <!-- Pricing Card -->
-                    <div class="pricing-card">
-                        <div class="price-original">398 د.م.</div>
-                        <div class="price-current">
-                            <span>199</span> <span class="currency">درهم فقط</span>
-                        </div>
-                        <div class="price-badge">توصيل مجاني بالكامل</div>
-                    </div>
-
-                    <!-- Trust Points -->
-                    <div class="trust-bullets">
-                        <div class="trust-item">
-                            <div class="trust-icon"><i class="fa-solid fa-handshake"></i></div>
-                            <span>الدفع عند الاستلام</span>
-                        </div>
-                        <div class="trust-item">
-                            <div class="trust-icon"><i class="fa-solid fa-truck"></i></div>
-                            <span>توصيل سريع مجاني</span>
-                        </div>
-                        <div class="trust-item">
-                            <div class="trust-icon"><i class="fa-solid fa-rotate"></i></div>
-                            <span>ضمان استبدال المقاس</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-actions">
-                        <a href="#order-form-section" class="btn btn-lg btn-pulse">
-                            <i class="fa-solid fa-bag-shopping"></i> اضغط هنا لطلب العرض
-                        </a>
-                        <span class="action-hint">أسرع! العرض متوفر حتى نفاد الكمية</span>
-                    </div>
-                </div>
-
-                <!-- Hero Image Showcase -->
-                <div class="hero-image-showcase">
+            <div class="container" style="max-width: 800px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <!-- Hero Image Showcase (Placed first to grab immediate attention on mobile) -->
+                <div class="hero-image-showcase" style="width: 100%; max-width: 500px; margin-bottom: 1.5rem;">
                     <div class="image-wrapper">
                         <img src="images/shorts-pack.jpg" alt="باك 3 سراويل كارغو نصاصين" class="main-featured-image" id="main-preview">
                         <span class="image-badge">الباك الكامل (3 سراويل)</span>
                     </div>
                     <!-- Thumbnails Gallery -->
-                    <div class="gallery-thumbnails">
+                    <div class="gallery-thumbnails" style="margin-top: 1rem;">
                         <div class="thumb-item active" onclick="changeImage('images/shorts-pack.jpg', this)">
                             <img src="images/shorts-pack.jpg" alt="باك 3 سراويل">
                             <span class="thumb-label">الباك 3 ألوان</span>
@@ -110,65 +63,50 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Product Features Section -->
-        <section class="features-section" id="features">
-            <div class="container">
-                <h2 class="section-title">لماذا سراويل الكارغو الخاصة بنا هي الأفضل؟</h2>
-                <p class="section-subtitle">قمنا بجمع الأناقة العصرية والراحة الصيفية في سروال واحد عملي ومتين</p>
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-wind"></i>
-                        </div>
-                        <h3>ثوب صيفي بارد ومميز</h3>
-                        <p>مصنوعة من قماش عالي الجودة وخفيف الوزن، يتنفس ويمنع التعرق ليحافظ على برودتك وانتعاشك في حر الصيف.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-shirt"></i>
-                        </div>
-                        <h3>تصميم أديداس رياضي أنيق</h3>
-                        <p>يتميز بجيوب كارغو جانبية واسعة لحفظ أغراضك، مع شريط أديداس الرياضي الشهير الذي يمنحك مظهراً عصرياً جذاباً.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-expand"></i>
-                        </div>
-                        <h3>حزام مطاطي مرن (Elastic)</h3>
-                        <p>حزام خصر مطاطي ناعم ومريح مع حبل لضبط القياس بشكل مثالي، يضمن لك حرية الحركة الكاملة دون أي ضغط.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon-box">
-                            <i class="fa-solid fa-check-double"></i>
-                        </div>
-                        <h3>3 ألوان أساسية متناسقة</h3>
-                        <p>الباك يضم ثلاثة ألوان ممتازة (الأسود الفخم، الرمادي الأنيق، والبلومارين الكلاسيكي)، يسهل تنسيقها مع أي تيشرت أو حذاء رياضي.</p>
-                    </div>
+                <!-- Badges & Titles -->
+                <div class="badge-discount" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-fire-flame-curved"></i> همزة العمر - خصم 50%
                 </div>
+                <h1 class="hero-title" style="margin-bottom: 1rem; width: 100%;">
+                    باك 3 سراويل <span class="text-highlight">كارغو نصاصين</span>
+                </h1>
+                <p class="hero-subtitle" style="margin: 0 auto 1.5rem; max-width: 600px;">
+                    أناقة، راحة ومتانة صيفية لا مثيل لها! احصل على 3 ألوان مختلفة (الأسود الفخم، البلومارين الأنيق، والرمادي الرياضي) في عرض واحد مذهل.
+                </p>
             </div>
         </section>
 
-        <!-- Dynamic Offer Highlight (Visual Card) -->
-        <section class="promo-banner-section">
-            <div class="container">
-                <div class="promo-card">
-                    <div class="promo-badge">تنبيه!</div>
-                    <h2>توصيل مجاني وسريع في أقل من 48 ساعة 🚚</h2>
-                    <p>التوصيل مجاني تماماً لجميع المدن والقرى المغربية. الدفع لا يتم إلا بعد أن تتسلم طلبيتك وتتأكد من جودتها ومقاسها بنفسك!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Order Form Section -->
-        <section class="order-form-section" id="order-form-section">
+        <!-- Order Form Section (Directly Below Image Gallery) -->
+        <section class="order-form-section" id="order-form-section" style="padding-top: 1rem;">
             <div class="container form-container">
+                <!-- Pricing Card & Trust Bullets (Positioned directly under the gallery to lead into checkout) -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem; width: 100%; max-width: 500px; margin: 0 auto 2rem;">
+                    <!-- Pricing Card -->
+                    <div class="pricing-card" style="margin-bottom: 0; width: 100%;">
+                        <div class="price-original">398 د.م.</div>
+                        <div class="price-current" style="justify-content: center;">
+                            <span>199</span> <span class="currency">درهم فقط</span>
+                        </div>
+                        <div class="price-badge">توصيل مجاني بالكامل</div>
+                    </div>
+
+                    <!-- Trust Points -->
+                    <div class="trust-bullets" style="justify-content: center; gap: 1rem; width: 100%; margin-bottom: 0;">
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <span>الدفع عند الاستلام</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-truck"></i></div>
+                            <span>توصيل سريع مجاني</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-rotate"></i></div>
+                            <span>ضمان الاستبدال</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-card">
                     <div class="form-header">
                         <h2>إستمارة طلب الشراء السريع</h2>
@@ -244,8 +182,6 @@
                             </div>
                         </div>
 
-
-
                         <!-- Order Summary Card -->
                         <div class="order-summary-card">
                             <h3>تفاصيل الفاتورة</h3>
@@ -271,6 +207,75 @@
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Banner Section (Incredible Offer) -->
+        <section class="promo-banner-section">
+            <div class="container">
+                <div class="promo-card">
+                    <div class="promo-badge">العرض الخيالي!</div>
+                    <h2>توصيل مجاني وسريع في أقل من 48 ساعة 🚚</h2>
+                    <p>التوصيل مجاني تماماً لجميع المدن والقرى المغربية. الدفع لا يتم إلا بعد أن تتسلم طلبيتك وتتأكد من جودتها ومقاسها بنفسك!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section (Features Showcase with Images) -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <h2 class="section-title">مميزات سراويل الكارغو الخاصة بنا</h2>
+                <p class="section-subtitle">اكتشف تفاصيل الجودة والأناقة التي جعلت هذا الباك الأكثر مبيعاً</p>
+
+                <div class="features-list">
+                    <!-- Feature Row 1: Pack composite -->
+                    <div class="feature-row">
+                        <div class="feature-image-col">
+                            <img src="images/shorts-pack.jpg" alt="باك 3 سراويل كارغو نصاصين" class="feature-showcase-img">
+                        </div>
+                        <div class="feature-text-col">
+                            <span class="feature-row-badge bg-secondary">همزة خيالية 🤯</span>
+                            <h3>همزة العمر: 3 سراويل بـ 199 درهم فقط! ميمكنش واووو!</h3>
+                            <p>عرض خيالي ومحدود جداً! لن تجد هذا السعر في أي مكان آخر بالمغرب. احصل على ثلاثة سراويل كارغو متميزة بألوان مختلفة وعصرية بسعر سروال واحد فقط. التوصيل مجاني تماماً حتى باب دارك والدفع لا يتم إلا بعد أن تعاين جودة طلبيتك بنفسك.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Row 2: Black shorts -->
+                    <div class="feature-row">
+                        <div class="feature-image-col">
+                            <img src="images/shorts-black.png" alt="سروال كارغو أسود جودة عالية" class="feature-showcase-img">
+                        </div>
+                        <div class="feature-text-col">
+                            <span class="feature-row-badge bg-primary">جودة فاخرة ⭐</span>
+                            <h3>تفصيل وخياطة ذو جودة عالية لا تتأثر بالغسيل</h3>
+                            <p>سراويلنا مصممة بعناية فائقة لتدوم طويلاً! خياطة مزدوجة متينة وتصميم رياضي أنيق بجيوب كارغو جانبية واسعة وعملية. القماش عالي الجودة ومقاوم للتمزق، لا يبهت لونه ولا يتأثر بالغسيل، مما يضمن لك مظهراً فخماً يواكب يومك.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Row 3: Grey shorts -->
+                    <div class="feature-row">
+                        <div class="feature-image-col">
+                            <img src="images/shorts-grey.png" alt="سروال كارغو رمادي صيفي مريح" class="feature-showcase-img">
+                        </div>
+                        <div class="feature-text-col">
+                            <span class="feature-row-badge bg-success">صيفي مريح 🌬️</span>
+                            <h3>ثوب صيفي بارد ومريح جداً للحركة والرياضة</h3>
+                            <p>مصنوع من قماش خفيف وناعم يتنفس ويسمح بمرور الهواء، ليحافظ على برودتك وانتعاشك في حر الصيف الحارق ويمنع التعرق. يأتي بحزام خصر مطاطي مرن (Elastic) مع حبل لضبط المقاس بشكل مثالي يضمن لك حرية حركة كاملة طوال اليوم.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Row 4: Blue Marine shorts -->
+                    <div class="feature-row">
+                        <div class="feature-image-col">
+                            <img src="images/shorts-bluemarine.png" alt="سروال كارغو بلومارين ألوان متناسقة" class="feature-showcase-img">
+                        </div>
+                        <div class="feature-text-col">
+                            <span class="feature-row-badge bg-dark">ألوان متناسقة 🎨</span>
+                            <h3>3 ألوان أساسية جذابة يسهل تنسيقها مع كل ملابسك</h3>
+                            <p>يحتوي الباك على ثلاثة ألوان أساسية وعملية جداً: الأسود الفخم، الرمادي الرياضي، والبلومارين الكلاسيكي. ألوان متناسقة للغاية تمنحك سهولة في تنسيقها مع أي تيشرت أو حذاء رياضي، وهي مثالية للخروجات اليومية، الشاطئ، أو صالة الألعاب الرياضية.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
