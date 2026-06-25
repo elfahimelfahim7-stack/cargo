@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="همزة العمر! احصل على باك 3 سراويل كارغو نصاصين بجودة عالية غير بـ 199 درهم فقط! التوصيل مجاني والدفع عند الاستلام. اطلب الآن!">
+    <title>باك 3 سراويل كارغو نصاصين - همزة العمر بـ 199 درهم فقط!</title>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content animate-pulse">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>عرض خاص ومحدود: التوصيل مجاني لجميع المدن المغربية والدفع عند الاستلام!</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-accent">همزة</span> شوب
+            </div>
+            <a href="#order-form-section" class="btn btn-sm btn-header">
+                <i class="fa-solid fa-shopping-cart"></i> اطلب الآن
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-discount">
+                        <i class="fa-solid fa-fire-flame-curved"></i> همزة العمر - خصم 50%
+                    </div>
+                    <h1 class="hero-title">
+                        باك 3 سراويل <span class="text-highlight">كارغو نصاصين</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        أناقة، راحة ومتانة صيفية لا مثيل لها! احصل على 3 ألوان مختلفة (الأسود الفخم، الكحلي الأنيق، والرمادي الرياضي) في عرض واحد مذهل.
+                    </p>
+                    
+                    <!-- Pricing Card -->
+                    <div class="pricing-card">
+                        <div class="price-original">398 د.م.</div>
+                        <div class="price-current">
+                            <span>199</span> <span class="currency">درهم فقط</span>
+                        </div>
+                        <div class="price-badge">توصيل مجاني بالكامل</div>
+                    </div>
+
+                    <!-- Trust Points -->
+                    <div class="trust-bullets">
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <span>الدفع عند الاستلام</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-truck"></i></div>
+                            <span>توصيل سريع مجاني</span>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fa-solid fa-rotate"></i></div>
+                            <span>ضمان استبدال المقاس</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#order-form-section" class="btn btn-lg btn-pulse">
+                            <i class="fa-solid fa-bag-shopping"></i> اضغط هنا لطلب العرض
+                        </a>
+                        <span class="action-hint">أسرع! العرض متوفر حتى نفاد الكمية</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="hero-image-showcase">
+                    <div class="image-wrapper">
+                        <img src="images/shorts-pack.jpg" alt="باك 3 سراويل كارغو نصاصين" class="main-featured-image" id="main-preview">
+                        <span class="image-badge">الباك الكامل (3 سراويل)</span>
+                    </div>
+                    <!-- Thumbnails Gallery -->
+                    <div class="gallery-thumbnails">
+                        <div class="thumb-item active" onclick="changeImage('images/shorts-pack.jpg', this)">
+                            <img src="images/shorts-pack.jpg" alt="باك 3 سراويل">
+                            <span class="thumb-label">الباك 3 ألوان</span>
+                        </div>
+                        <div class="thumb-item" onclick="changeImage('images/shorts-grey.jpg', this)">
+                            <img src="images/shorts-grey.jpg" alt="سروال رمادي">
+                            <span class="thumb-label">الرمادي</span>
+                        </div>
+                        <div class="thumb-item" onclick="changeImage('images/shorts-blue.jpg', this)">
+                            <img src="images/shorts-blue.jpg" alt="سروال كحلي">
+                            <span class="thumb-label">الكحلي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <h2 class="section-title">لماذا سراويل الكارغو الخاصة بنا هي الأفضل؟</h2>
+                <p class="section-subtitle">قمنا بجمع الأناقة العصرية والراحة الصيفية في سروال واحد عملي ومتين</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3>ثوب صيفي بارد ومميز</h3>
+                        <p>مصنوعة من قماش عالي الجودة وخفيف الوزن، يتنفس ويمنع التعرق ليحافظ على برودتك وانتعاشك في حر الصيف.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <h3>تصميم أديداس رياضي أنيق</h3>
+                        <p>يتميز بجيوب كارغو جانبية واسعة لحفظ أغراضك، مع شريط أديداس الرياضي الشهير الذي يمنحك مظهراً عصرياً جذاباً.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                        <h3>حزام مطاطي مرن (Elastic)</h3>
+                        <p>حزام خصر مطاطي ناعم ومريح مع حبل لضبط القياس بشكل مثالي، يضمن لك حرية الحركة الكاملة دون أي ضغط.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-check-double"></i>
+                        </div>
+                        <h3>3 ألوان أساسية متناسقة</h3>
+                        <p>الباك يضم ثلاثة ألوان ممتازة (الأسود الفحم، الرمادي الأنيق، والكحلي الكلاسيكي)، يسهل تنسيقها مع أي تيشرت أو حذاء رياضي.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Offer Highlight (Visual Card) -->
+        <section class="promo-banner-section">
+            <div class="container">
+                <div class="promo-card">
+                    <div class="promo-badge">تنبيه!</div>
+                    <h2>توصيل مجاني وسريع في أقل من 48 ساعة 🚚</h2>
+                    <p>التوصيل مجاني تماماً لجميع المدن والقرى المغربية. الدفع لا يتم إلا بعد أن تتسلم طلبيتك وتتأكد من جودتها ومقاسها بنفسك!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="order-form-section" id="order-form-section">
+            <div class="container form-container">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>إستمارة طلب الشراء السريع</h2>
+                        <p>يرجى ملء الاستمارة بالأسفل لتأكيد طلبك. التوصيل مجاني والدفع عند الاستلام</p>
+                    </div>
+
+                    <form id="checkout-form" onsubmit="handleOrderSubmit(event)">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullname"><i class="fa-solid fa-user input-icon"></i> الاسم الكامل *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="أدخل اسمك ونسبك بالكامل" required autocomplete="name">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phone"><i class="fa-solid fa-phone input-icon"></i> رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="مثال: 0612345678" required autocomplete="tel">
+                            <span class="input-helper">سنتصل بك على هذا الرقم لتأكيد الشحن</span>
+                        </div>
+
+                        <!-- City -->
+                        <div class="form-group">
+                            <label for="city"><i class="fa-solid fa-city input-icon"></i> المدينة *</label>
+                            <input type="text" id="city" name="city" placeholder="المدينة التي تقطن بها حالياً" required autocomplete="address-level2">
+                        </div>
+
+                        <!-- District -->
+                        <div class="form-group">
+                            <label for="district"><i class="fa-solid fa-map-location-dot input-icon"></i> الحي / المنطقة *</label>
+                            <input type="text" id="district" name="district" placeholder="اسم الحي أو المنطقة السكنية" required autocomplete="address-line1">
+                        </div>
+
+                        <!-- Size Selection -->
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-ruler-combined input-icon"></i> المقاس المطلوب *</label>
+                            <div class="size-selector">
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="M" checked>
+                                    <div class="size-box">
+                                        <span class="size-title">M</span>
+                                        <span class="size-desc">(55-65 كجم)</span>
+                                    </div>
+                                </label>
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="L">
+                                    <div class="size-box">
+                                        <span class="size-title">L</span>
+                                        <span class="size-desc">(65-75 كجم)</span>
+                                    </div>
+                                </label>
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="XL">
+                                    <div class="size-box">
+                                        <span class="size-title">XL</span>
+                                        <span class="size-desc">(75-85 كجم)</span>
+                                    </div>
+                                </label>
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="XXL">
+                                    <div class="size-box">
+                                        <span class="size-title">XXL</span>
+                                        <span class="size-desc">(85-95 كجم)</span>
+                                    </div>
+                                </label>
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="3XL">
+                                    <div class="size-box">
+                                        <span class="size-title">3XL</span>
+                                        <span class="size-desc">(95-105 كجم)</span>
+                                    </div>
+                                </label>
+                                <label class="size-option">
+                                    <input type="radio" name="size" value="4XL">
+                                    <div class="size-box">
+                                        <span class="size-title">4XL</span>
+                                        <span class="size-desc">(105-115 كجم)</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Order Summary Card -->
+                        <div class="order-summary-card">
+                            <h3>تفاصيل الفاتورة</h3>
+                            <div class="summary-line">
+                                <span>سعر العرض (3 سراويل):</span>
+                                <span class="summary-val">199 درهم</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>مصاريف التوصيل:</span>
+                                <span class="summary-val text-success">مجاني (0 د.م.)</span>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-line total-line">
+                                <span>المجموع النهائي:</span>
+                                <span class="summary-val text-primary">199 درهم فقط</span>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Submit Button -->
+                        <div class="checkout-actions" style="margin-top: 1.5rem;">
+                            <button type="submit" id="btn-submit-whatsapp" class="btn btn-lg btn-block btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp" style="font-size: 1.5rem;"></i> تأكيد الطلب عبر الواتساب فوراً
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>هل التوصيل مجاني حقاً؟ وكيف سأدفع؟</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>نعم، التوصيل مجاني 100% لجميع المدن والقرى المغربية دون أي تكلفة إضافية. أما بخصوص الدفع فهو "عند الاستلام"، أي أنك لن تدفع شيئاً حتى يطرق عامل التوصيل بابك ويسلمك السراويل بيدك وتفحص جودتها بنفسك.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>كم يستغرق وصول الطلب إليّ؟</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>يستغرق التوصيل عادةً بين 24 إلى 48 ساعة كحد أقصى. سنتصل بك هاتفياً في غضون ساعات قليلة من تسجيل طلبك لتأكيد العنوان والمعلومات قبل إرسال الشحنة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>ماذا لو كان المقاس صغيراً أو كبيراً؟ هل يمكنني التبديل؟</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>بالتأكيد! رضاكم هو أولويتنا. إذا لم يناسبكم المقاس، يمكنكم التواصل معنا عبر الرقم الذي سيتصل بكم أو على الواتساب، وسنقوم بإرسال المقاس الجديد إليكم مجاناً وبسرعة وبدون أي تعقيدات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p class="copyright">© 2026 همزة شوب. جميع الحقوق محفوظة.</p>
+            <div class="footer-badges">
+                <span class="footer-badge"><i class="fa-solid fa-shield-halved"></i> شراء آمن 100%</span>
+                <span class="footer-badge"><i class="fa-solid fa-thumbs-up"></i> جودة مضمونة</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-card">
+            <div class="success-icon-wrapper">
+                <i class="fa-solid fa-circle-check animate-bounce"></i>
+            </div>
+            <h2 class="modal-title">تهانينا! تم تسجيل طلبك بنجاح 🎉</h2>
+            <p class="modal-message">
+                شكراً جزيلاً لثقتك بنا، يا <strong id="customer-name-modal">...</strong>. لقد استقبلنا طلبك لـ <strong>باك 3 سراويل كارغو نصاصين</strong> بمقاس <strong id="customer-size-modal">...</strong>.
+            </p>
+            <div class="modal-details">
+                <p><strong>رقم الهاتف:</strong> <span id="customer-phone-modal">...</span></p>
+                <p><strong>المدينة والحي:</strong> <span id="customer-city-modal">...</span>، <span id="customer-district-modal">...</span></p>
+                <p><strong>قيمة الطلب:</strong> 199 درهم (توصيل مجاني)</p>
+            </div>
+            <div class="modal-info-alert">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>يرجى إبقاء هاتفك مشغلاً، سيتصل بك فريق الدعم الفني قريباً جداً لتأكيد الشحن وإرسال طلبيتك!</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px;">
+                <a id="whatsapp-confirm-btn" href="#" target="_blank" class="btn btn-lg btn-block btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i> تأكيد الطلب عبر الواتساب فوراً
+                </a>
+                <button class="btn btn-lg btn-block btn-header" onclick="closeModal()">موافق، إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
