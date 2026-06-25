@@ -3,6 +3,7 @@
 // 1. Gallery Thumbnail Switcher
 function changeImage(imageSrc, thumbnailElement) {
     const mainPreview = document.getElementById('main-preview');
+    const imageBadge = document.getElementById('image-badge');
     if (!mainPreview) return;
 
     // Fade out effect
@@ -11,6 +12,22 @@ function changeImage(imageSrc, thumbnailElement) {
     setTimeout(() => {
         mainPreview.src = imageSrc;
         mainPreview.style.opacity = '1';
+        
+        // Update badge dynamically
+        if (imageBadge) {
+            if (imageSrc.includes('shorts-pack.jpg')) {
+                imageBadge.style.display = 'none';
+            } else {
+                imageBadge.style.display = 'inline-block';
+                if (imageSrc.includes('shorts-black.png')) {
+                    imageBadge.innerText = 'الأسود الفخم';
+                } else if (imageSrc.includes('shorts-grey.png')) {
+                    imageBadge.innerText = 'الرمادي الرياضي';
+                } else if (imageSrc.includes('shorts-bluemarine.png')) {
+                    imageBadge.innerText = 'البلومارين الأنيق';
+                }
+            }
+        }
     }, 150);
 
     // Update active class on thumbnails
@@ -24,16 +41,15 @@ function changeImage(imageSrc, thumbnailElement) {
     }
 }
 
-// 2. FAQ Accordion Toggle
+// 2. FAQ Accordion Toggle & Auto-save form drafts
 document.addEventListener('DOMContentLoaded', () => {
+    // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
-    
     faqQuestions.forEach(question => {
         question.addEventListener('click', () => {
             const currentItem = question.parentElement;
             const isActive = currentItem.classList.contains('active');
             
-            // Close all items
             const allItems = document.querySelectorAll('.faq-item');
             allItems.forEach(item => {
                 item.classList.remove('active');
@@ -43,15 +59,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             
-            // If the clicked item was not active, open it
             if (!isActive) {
                 currentItem.classList.add('active');
                 const answer = currentItem.querySelector('.faq-answer');
                 if (answer) {
-                    // Set max-height to scrollHeight for smooth transition
                     answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
             }
+        });
+    });
+
+    // Auto-save form drafts to localStorage
+    const fields = ['fullname', 'phone', 'city', 'district'];
+    fields.forEach(fieldId => {
+        const input = document.getElementById(fieldId);
+        if (input) {
+            // Restore from draft
+            const savedValue = localStorage.getItem('draft_' + fieldId);
+            if (savedValue) {
+                input.value = savedValue;
+            }
+            // Save on input
+            input.addEventListener('input', () => {
+                localStorage.setItem('draft_' + fieldId, input.value);
+            });
+        }
+    });
+
+    // Clear drafts on successful submit
+    const form = document.getElementById('checkout-form');
+    if (form) {
+        form.addEventListener('submit', () => {
+            fields.forEach(fieldId => {
+                localStorage.removeItem('draft_' + fieldId);
+            });
         });
     });
 });
@@ -116,7 +157,7 @@ function handleOrderSubmit(event) {
 - المقاس: ${size}
 - الألوان: ${comboText}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=212652683023&text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=0652683023&text=${encodeURIComponent(whatsappMessage)}`;
 
     // Populate Success Modal Fields
     document.getElementById('customer-name-modal').innerText = fullname;
