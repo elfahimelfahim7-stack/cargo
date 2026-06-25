@@ -84,7 +84,7 @@ function handleOrderSubmit(event) {
         btnWhatsapp.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> جاري فتح الواتساب...';
     }
 
-    const comboText = 'الباك القياسي (سروال أسود + رمادي + كحلي)';
+    const comboText = 'الباك القياسي (سروال أسود + رمادي + بلومارين)';
 
     // 1. Send data to Google Sheets silently (CORS-friendly GET request with query params)
     const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbwgPr2WbQ4ltMAhUc2B6mW_2m8KltQmcskI6MFZ6UCW/exec';
