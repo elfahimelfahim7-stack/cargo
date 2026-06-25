@@ -144,11 +144,18 @@ function handleOrderSubmit(event) {
         method: 'GET',
         mode: 'no-cors', // Bypasses CORS redirects blockages on local file testing
         cache: 'no-cache'
-    })
-    .then(() => console.log('Order sent to Google Sheet successfully via GET'))
-    .catch(err => console.error('Error sending to Google Sheet:', err));
+    });
 
-    // 2. Prepare WhatsApp Link
+    // 2. Trigger Facebook Pixel Purchase Event (Lead Tracking)
+    if (typeof fbq === 'function') {
+        fbq('track', 'Purchase', {
+            content_name: 'باك 3 سراويل كارغو نصاصين',
+            value: 199.00,
+            currency: 'MAD'
+        });
+    }
+
+    // 3. Prepare WhatsApp Link
     const whatsappMessage = `السلام عليكم، أريد تأكيد طلبي لباك 3 سراويل كارغو نصاصين:
 - الاسم الكامل: ${fullname}
 - رقم الهاتف: ${phone}
