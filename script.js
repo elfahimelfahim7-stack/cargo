@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.removeItem('draft_' + fieldId);
             });
         });
-    });
+    }
 });
 
 // 3. Form Order Submission & Simulation
@@ -164,7 +164,7 @@ function handleOrderSubmit(event) {
 - المقاس: ${size}
 - الألوان: ${comboText}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=0652683023&text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=212652683023&text=${encodeURIComponent(whatsappMessage)}`;
 
     // Populate Success Modal Fields
     document.getElementById('customer-name-modal').innerText = fullname;
